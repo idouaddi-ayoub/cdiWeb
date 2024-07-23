@@ -16,6 +16,8 @@ import wheel from "./svg/steeringwheel.svg";
 import controller from "./svg/gamecontroller.svg";
 import twitch from "./svg/twitch.svg";
 import cdiSvg from "./svg/CDI_logo.svg";
+import moon from "./svg/moon-solid.svg";
+import sun from "./svg/sun-solid.svg";
 
 export {
   arrowRight,
@@ -32,6 +34,8 @@ export {
   pc,
   twitch,
   cdiSvg,
+  moon,
+  sun,
 };
 
 //ico

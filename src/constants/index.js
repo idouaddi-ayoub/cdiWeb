@@ -1,10 +1,3 @@
-export const navlink = [
-  { href: "/", label: "Home" },
-  { href: "/aboutus", label: "About Us" },
-  { href: "/", label: "test" },
-  { href: "/", label: "test" },
-];
-
 export const Card = [];
 
 export const socialMedia = [];
@@ -31,10 +24,10 @@ export const footerLinks = [
     title: "Get in touch",
     links: [
       {
-        name: "deusexmachinaprogaming@gmail.com",
-        link: "mailto: deusexmachinaprogaming@gmail.com",
+        name: "",
+        link: "",
       },
-      { name: "+212 642426298", link: "tel:+212642426298" },
+      { name: "+212 ", link: "tel:+212642426298" },
     ],
   },
 ];
