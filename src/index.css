@@ -5,6 +5,15 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  background-color: black;
+}
+
+.cl-avatarBox {
+  width: 4rem;
+  height: 4rem;
+}
+
 .dark {
   --primary: 13, 13, 13;
   --secondary: 31, 166, 65;
