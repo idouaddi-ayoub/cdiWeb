@@ -35,5 +35,5 @@ export default {
       },
     },
   },
-  plugins: [require("framer-motion")],
+  plugins: [require("tailwind-scrollbar-hide")],
 };

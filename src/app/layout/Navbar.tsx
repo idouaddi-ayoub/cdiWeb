@@ -46,7 +46,7 @@ const Navbar = () => {
     </Link>
   ));
   return (
-    <nav className="w-full h-24 bg-primary flex justify-between items-center px-10 z-50 fixed">
+    <nav className="w-full h-32 bg-primary flex justify-between items-center px-10 z-50 fixed">
       {/* <button onClick={() => setTheme(theme === "dark" ? "light" : "dark")}>
         toggle
       </button> */}

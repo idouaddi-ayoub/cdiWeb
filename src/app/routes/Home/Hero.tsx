@@ -1,6 +1,11 @@
 import Glitch from "./Glitch";
+
 const Hero = () => {
-  return <Glitch />;
+  return (
+    <div id="imageContainer">
+      <Glitch />
+    </div>
+  );
 };
 
 export default Hero;
