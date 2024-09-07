@@ -9,10 +9,7 @@ import {
   WebGLRenderer,
   DirectionalLight,
   ShaderMaterial,
-  MeshNormalMaterial,
 } from "three";
-import { TextGeometry } from "three/examples/jsm/geometries/TextGeometry.js";
-import { FontLoader } from "three/examples/jsm/loaders/FontLoader.js";
 
 const vertexShader = `
       varying vec2 vUv;
@@ -85,21 +82,6 @@ function Glitch() {
 
     const mesh = new Mesh(geometry, shader);
     scene.add(mesh);
-
-    const loader = new FontLoader();
-    loader.load("src/app/assets/fonts/main.ttf", (font) => {
-      const text = new TextGeometry("text", {
-        font,
-        size: 50,
-        depth: 5,
-        curveSegments: 12,
-      });
-      text.center();
-      const material = new MeshNormalMaterial();
-      const textMesh = new Mesh(text, material);
-      textMesh.position.z = 8;
-      scene.add(textMesh);
-    });
 
     const renderer = new WebGLRenderer();
     renderer.setSize(container.clientWidth, container.clientHeight);
