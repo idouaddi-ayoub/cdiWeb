@@ -1,17 +1,17 @@
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 import copyrightSign from "../../assets/icons/svg/copyright-sign.svg";
-import cdiLogo from "../../assets/images/logo/CDI_logo_crop.png";
 import { footerLinks, socialMedia } from "../../constants";
 
+import CDI from "../../assets/images/logo/CDI_PNG.png";
 const Footer = () => {
   return (
     <footer className="bg-black w-full p-10">
       <div className="flex justify-between items-start gap-20 flex-wrap max-lg:flex-col">
-        <div className="flex flex-col items-start">
+        <div className="flex flex-col items-center">
           <HashLink to="/#">
             <img
-              src={cdiLogo}
+              src={CDI}
               alt="logo"
               width={100}
               className="m-0 justify-center"
@@ -54,7 +54,6 @@ const Footer = () => {
           ))}
         </div>
       </div>
-
       <div className="flex justify-between text-white mt-24 max-sm:flex-col max-sm:items-center">
         <div className="flex flex-1 justify-start items-center gap-2 font-montserrat cursor-pointer">
           <img

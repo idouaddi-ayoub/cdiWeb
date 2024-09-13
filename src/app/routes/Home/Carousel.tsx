@@ -10,8 +10,7 @@ const Carousel = () => {
     <Swiper
       modules={[Pagination]}
       pagination={{ clickable: true }}
-      onSlideChange={() => console.log("slide change")}
-      onSwiper={(swiper) => console.log(swiper)}
+      className="w-4/6"
     >
       <SwiperSlide>
         <img src={CDI} />

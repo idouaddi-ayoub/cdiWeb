@@ -1,4 +1,4 @@
-import CDI_logo from "../../../assets/images/logo/CDI_logo_crop.png";
+import CDI_logo from "../../../assets/images/logo/CDI_PNG.png";
 
 const Skills = () => {
   return (
