@@ -7,18 +7,20 @@ const About = () => {
         ABOUT US
       </h1>
       <div className="items-center justify-center flex">
-        <div className="mr-10 w-1/2 text-white ">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-          mollitia, molestiae quas vel sint commodi repudiandae consequuntur
-          voluptatum laborum numquam blanditiis harum quisquam eius sed odit
-          fugiat iusto fuga praesentium optio, eaque rerum! Provident similique
-          accusantium nemo autem.Lorem ipsum dolor sit amet consectetur
-          adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi
-          repudiandae consequuntur voluptatum laborum numquam blanditiis harum
-          quisquam eius sed odit fugiat iusto fuga praesentium optio, eaque
-          rerum! Provident similique accusantium nemo autem.
+        <div className="mr-5 w-1/2 text-white text-justify text-xl leading-8">
+          <b>CDI ENCG Agadir</b> is a community of individuals who share a
+          common interest in the digital world. They come together to share
+          their experiences, collaborate on projects, and learn from one
+          another.
+          <br /> This group is focused on fostering a collaborative and
+          supportive environment where members can work together to explore new
+          digital technologies, develop new skills, and advance their careers.
+          <br />
+          Whether you're a seasoned professional or just starting out in the
+          digital world, this is a great place to connect with like-minded
+          individuals and grow your network.
         </div>
-        <div className="ml-10 w-1/2">
+        <div className="ml-5 w-1/2">
           <img src={CDI} />
         </div>
       </div>

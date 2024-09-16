@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { SignedIn, SignedOut, UserButton, useClerk } from "@clerk/clerk-react";
+import { HashLink } from "react-router-hash-link";
 import { useState } from "react";
 import { motion } from "framer-motion";
 // import { useLocalStorage } from "usehooks-ts";
@@ -55,7 +56,7 @@ const Navbar = () => {
   const navlink = [
     { href: "/", label: "Home" },
     { href: "/about-us", label: "About Us" },
-    { href: "/", label: "Events" },
+    { href: "/events", label: "Events" },
     { href: "/", label: "Appah" },
   ];
   const [activeNav, setActiveNav] = useState(navlink[0].label);
@@ -96,7 +97,7 @@ const Navbar = () => {
         toggle
       </button> */}
       <div>
-        <Link to="/">
+        <HashLink to="/#">
           <motion.svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 100 100"
@@ -107,7 +108,7 @@ const Navbar = () => {
           >
             <defs>
               <style>
-                {".strokefill{stroke:green;}"}
+                {".strokefill{stroke:white;}"}
                 {".fill{fill:white;}"}
               </style>
             </defs>
@@ -121,7 +122,7 @@ const Navbar = () => {
                 initial="hidden"
                 variants={svgFill}
                 strokeWidth={0.5}
-                stroke="green"
+                stroke="black"
               />
               {/* D */}
               <motion.path
@@ -131,7 +132,7 @@ const Navbar = () => {
                 initial="hidden"
                 variants={svgFill}
                 strokeWidth={0.5}
-                stroke="green"
+                stroke="black"
               />
               {/* ° */}
               <motion.path
@@ -141,7 +142,7 @@ const Navbar = () => {
                 initial="hidden"
                 variants={svgIdle}
                 strokeWidth={0.5}
-                stroke="green"
+                stroke="black"
               />
               {/* . */}
               <motion.path
@@ -151,7 +152,7 @@ const Navbar = () => {
                 initial="hidden"
                 variants={svgFill}
                 strokeWidth={0.5}
-                stroke="green"
+                stroke="black"
               />
               {/* I */}
               <motion.path
@@ -161,7 +162,7 @@ const Navbar = () => {
                 initial="hidden"
                 variants={svgFill}
                 strokeWidth={0.5}
-                stroke="green"
+                stroke="black"
               />
               {/* stroke */}
               <g id="Layer_2" data-name="Layer 2">
@@ -219,7 +220,7 @@ const Navbar = () => {
               </g>
             </g>
           </motion.svg>
-        </Link>
+        </HashLink>
       </div>
       <div className="justify-center">{renderNavLinks}</div>
       <div>

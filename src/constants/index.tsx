@@ -1,20 +1,4 @@
-import facebook from "../assets/icons/svg/facebook.svg";
-import instagram from "../assets/icons/svg/instagram.svg";
-
 export const Card = [];
-
-export const socialMedia = [
-  {
-    src: facebook,
-    alt: "facebook logo",
-    link: "https://www.facebook.com/profile.php?id=100083258262773",
-  },
-  {
-    src: instagram,
-    alt: "instagram logo",
-    link: "https://www.instagram.com/cdi_encgagadir/",
-  },
-];
 
 export const footerLinks = [
   {

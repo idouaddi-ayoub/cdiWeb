@@ -1,4 +1,8 @@
-import CDI_logo from "../../../assets/images/logo/CDI_PNG.png";
+import code from "../../../assets/icons/png/code.png";
+import ecom from "../../../assets/icons/png/mobile-shopping.png";
+import freelance from "../../../assets/icons/png/self-employed.png";
+import design from "../../../assets/icons/png/setting.png";
+import editing from "../../../assets/icons/png/video-editing.png";
 
 const Skills = () => {
   return (
@@ -9,32 +13,57 @@ const Skills = () => {
       <div className="flex">
         <div className="w-1/5 flex justify-center items-center">
           <div>
-            <img src={CDI_logo} width={80} alt="CDICLUB" className="m-auto" />
-            <h1 className="text-center text-white pt-8">Coding</h1>
+            <img
+              src={code}
+              width={80}
+              alt="CDICLUB"
+              className="m-auto invert"
+            />
+            <h1 className="text-center text-white pt-6">Coding</h1>
           </div>
         </div>
         <div className="w-1/5 flex justify-center items-center">
           <div>
-            <img src={CDI_logo} width={80} alt="CDICLUB" className="m-auto" />
-            <h1 className="text-center text-white pt-8">E-Commerce</h1>
+            <img
+              src={ecom}
+              width={80}
+              alt="CDICLUB"
+              className="m-auto invert"
+            />
+            <h1 className="text-center text-white pt-6">E-Commerce</h1>
           </div>
         </div>
         <div className="w-1/5 flex justify-center items-center">
           <div>
-            <img src={CDI_logo} width={80} alt="CDICLUB" className="m-auto" />
-            <h1 className="text-center text-white pt-8">Design</h1>
+            <img
+              src={design}
+              width={80}
+              alt="CDICLUB"
+              className="m-auto invert"
+            />
+            <h1 className="text-center text-white pt-6">Design</h1>
           </div>
         </div>
         <div className="w-1/5 flex justify-center items-center">
           <div>
-            <img src={CDI_logo} width={80} alt="CDICLUB" className="m-auto" />
-            <h1 className="text-center text-white pt-8">Video Editing</h1>
+            <img
+              src={editing}
+              width={80}
+              alt="CDICLUB"
+              className="m-auto invert"
+            />
+            <h1 className="text-center text-white pt-6">Video Editing</h1>
           </div>
         </div>
         <div className="w-1/5 flex justify-center items-center">
           <div>
-            <img src={CDI_logo} width={80} alt="CDICLUB" className="m-auto" />
-            <h1 className="text-center text-white pt-8">Freelance</h1>
+            <img
+              src={freelance}
+              width={80}
+              alt="CDICLUB"
+              className="m-auto invert"
+            />
+            <h1 className="text-center text-white pt-6">Freelance</h1>
           </div>
         </div>
       </div>
