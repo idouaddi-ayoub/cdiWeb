@@ -1,4 +1,4 @@
-import About from "./About";
+import AboutHome from "./AboutHome";
 import Carousel from "./Carousel";
 import Hero from "./Hero";
 import Overview from "./Overview";
@@ -11,7 +11,7 @@ const Home = () => {
       <Overview />
       <Carousel />
       <Skills />
-      <About />
+      <AboutHome />
     </>
   );
 };

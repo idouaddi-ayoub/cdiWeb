@@ -3,6 +3,8 @@ import { SignedIn, SignedOut, UserButton, useClerk } from "@clerk/clerk-react";
 import { HashLink } from "react-router-hash-link";
 import { useState } from "react";
 import { motion } from "framer-motion";
+import hamburger from "../../assets/icons/svg/hamburger.svg";
+import { ul } from "framer-motion/client";
 // import { useLocalStorage } from "usehooks-ts";
 
 const svgPath = {
@@ -78,7 +80,7 @@ const Navbar = () => {
       to={item.href}
       key={item.label}
       onClick={() => setActiveNav(item.label)}
-      className="relative rounded-full px-3 py-1.5 m-5 font-medium transition focus-visible:outline-2 font-montserrat leading-normal text-lg text-tertiary"
+      className="hidden lg:inline-block relative rounded-full px-3 py-1.5 m-5 font-medium transition focus-visible:outline-2 font-montserrat leading-normal text-lg text-tertiary"
     >
       {activeNav === item.label && (
         <motion.span
@@ -92,7 +94,7 @@ const Navbar = () => {
     </Link>
   ));
   return (
-    <nav className="w-full h-24 bg-primary flex justify-between items-center px-10 z-50 fixed">
+    <nav className="w-full h-24 bg-primary flex justify-between center items-center px-10 z-50 fixed">
       {/* <button onClick={() => setTheme(theme === "dark" ? "light" : "dark")}>
         toggle
       </button> */}
@@ -222,8 +224,9 @@ const Navbar = () => {
           </motion.svg>
         </HashLink>
       </div>
-      <div className="justify-center">{renderNavLinks}</div>
-      <div>
+      <div className="justify-center ">{renderNavLinks}</div>
+      {/* add overflow for he signedout&signedin*/}
+      <div className="hidden ">
         <SignedOut>
           <ul className="space-x-5 flex">
             <li className="px-5 py-2 border-2 rounded-lg text-tertiary">
@@ -234,15 +237,19 @@ const Navbar = () => {
             </li>
           </ul>
         </SignedOut>
-        <SignedIn>
-          <div className="mr-4 ml-4 m">
-            <UserButton />
-          </div>
-        </SignedIn>
       </div>
-      {/* <div className="hidden max-lg:block ">
-        <img src={hamburger} alt="menu" width={25} height={25} />
-      </div> */}
+      <div>
+        <div className=" flex items-center">
+          <SignedIn>
+            <div className="mr-8 ml-8">
+              <UserButton />
+            </div>
+          </SignedIn>
+          <div className="lg:hidden ">
+            <img src={hamburger} alt="menu" width={25} height={25} />
+          </div>
+        </div>
+      </div>
     </nav>
   );
 };
