@@ -10,8 +10,8 @@ const Skills = () => {
       <h1 className="font-montserrat text-4xl leading-normal font-medium text-white text-center pb-10">
         SKILLS
       </h1>
-      <div className="flex">
-        <div className="w-1/5 flex justify-center items-center">
+      <div className="flex flex-wrap justify-center items-center">
+        <div className="w-1/3 md:w-1/5 ">
           <div>
             <img
               src={code}
@@ -19,10 +19,10 @@ const Skills = () => {
               alt="CDICLUB"
               className="m-auto invert"
             />
-            <h1 className="text-center text-white pt-6">Coding</h1>
+            <h1 className="text-center text-white pt-4 pb-8">Coding</h1>
           </div>
         </div>
-        <div className="w-1/5 flex justify-center items-center">
+        <div className="w-1/3 md:w-1/5">
           <div>
             <img
               src={ecom}
@@ -30,10 +30,10 @@ const Skills = () => {
               alt="CDICLUB"
               className="m-auto invert"
             />
-            <h1 className="text-center text-white pt-6">E-Commerce</h1>
+            <h1 className="text-center text-white pt-4 pb-8">E-Commerce</h1>
           </div>
         </div>
-        <div className="w-1/5 flex justify-center items-center">
+        <div className="w-1/3 md:w-1/5">
           <div>
             <img
               src={design}
@@ -41,10 +41,10 @@ const Skills = () => {
               alt="CDICLUB"
               className="m-auto invert"
             />
-            <h1 className="text-center text-white pt-6">Design</h1>
+            <h1 className="text-center text-white pt-4 pb-8">Design</h1>
           </div>
         </div>
-        <div className="w-1/5 flex justify-center items-center">
+        <div className="w-1/3 md:w-1/5">
           <div>
             <img
               src={editing}
@@ -52,10 +52,10 @@ const Skills = () => {
               alt="CDICLUB"
               className="m-auto invert"
             />
-            <h1 className="text-center text-white pt-6">Video Editing</h1>
+            <h1 className="text-center text-white pt-4 pb-8">Video Editing</h1>
           </div>
         </div>
-        <div className="w-1/5 flex justify-center items-center">
+        <div className="w-1/3 md:w-1/5">
           <div>
             <img
               src={freelance}
@@ -63,7 +63,7 @@ const Skills = () => {
               alt="CDICLUB"
               className="m-auto invert"
             />
-            <h1 className="text-center text-white pt-6">Freelance</h1>
+            <h1 className="text-center text-white pt-4 pb-8">Freelance</h1>
           </div>
         </div>
       </div>

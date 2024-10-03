@@ -33,6 +33,7 @@ const App = () => {
         },
       }}
     >
+      {/* global user state */}
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Layout />}>
