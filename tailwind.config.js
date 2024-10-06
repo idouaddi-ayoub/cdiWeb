@@ -31,6 +31,7 @@ export default {
         "3xl": "0 30px 20px rgba(0, 0, 0, 0.4)",
       },
       screens: {
+        xs: "0px",
         wide: "1440px",
       },
     },
